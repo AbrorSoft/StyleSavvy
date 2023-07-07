@@ -47,6 +47,11 @@
 @media (max-width: 480px) {
   .checkout-container {
     margin-top: 58px;
+    overflow-x: scroll;
+  }
+  .checkout-header{
+    overflow-x: scroll;
+
   }
 
   .total {
