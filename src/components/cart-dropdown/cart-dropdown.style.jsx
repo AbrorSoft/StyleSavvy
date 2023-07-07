@@ -13,9 +13,15 @@ top: 90px;
 right: 40px;
 z-index: 5;
 
+
 ${BaseButton}, ${GoogleSignInButton}, ${InvertedButton}} {
   margin-top: auto;
 }
+
+`
+export const RemoveDropdown = styled.div`
+  text-align: end;
+  cursor: pointer;
 
 `
 export const EmptyMessage = styled.span`

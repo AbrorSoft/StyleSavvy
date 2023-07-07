@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { CartContext } from '../../contexts/cart.context'
-import  {CartDropdownContainer, EmptyMessage, CartItems}  from'./cart-dropdown.style'
+import  {CartDropdownContainer, EmptyMessage, CartItems,RemoveDropdown}  from'./cart-dropdown.style'
 import Button from '../button/button.component'
 import CartItem from '../cart-item/cart-item.component'
 const CartDropdown = ()=>{
@@ -18,6 +18,7 @@ const CartDropdown = ()=>{
     }) : (<EmptyMessage>Your cart is empty ):</EmptyMessage>)
     return(
         <CartDropdownContainer>
+             <RemoveDropdown onClick={()=> setCartIsOpen(false)}>&#10005;</RemoveDropdown>
             <CartItems >
                { content}
             </CartItems>
