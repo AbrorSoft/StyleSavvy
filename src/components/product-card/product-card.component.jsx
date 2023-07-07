@@ -4,8 +4,11 @@ import './product-card.styles.scss'
 import Button, {BUTTON_TYPE_CLAESS} from '../button/button.component'
 const ProductCatd = ({product})=>{
     const { name, price, imageUrl} = product
-    const  { addItemToCart} = useContext(CartContext)
-    const  addProductToCart = ()=> addItemToCart(product)
+    const  {setCartIsOpen, addItemToCart} = useContext(CartContext)
+    const  addProductToCart = ()=> {
+        addItemToCart(product)
+        setCartIsOpen(true)
+    }
     return (
         <div className='product-card-container'>
             <img src={`${imageUrl}` } alt={name}/>
