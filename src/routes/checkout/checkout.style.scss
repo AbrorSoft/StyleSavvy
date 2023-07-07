@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
-  overflow-x: scroll;
 }
 
 .header-block {
@@ -48,6 +47,11 @@
 @media (max-width: 480px) {
   .checkout-container {
     margin-top: 58px;
+    overflow-x: scroll;
+  }
+  .checkout-header{
+    overflow-x: scroll;
+
   }
 
   .total {
