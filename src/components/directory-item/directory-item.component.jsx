@@ -1,7 +1,7 @@
 import './directory-item-styles.scss'
 import { useNavigate } from 'react-router-dom'
 const CategoryItem = ({category})=>{
-    const  {imageUrl, title, route} =category
+    const  {imageUrl, title, route} = category
     const navigate = useNavigate()
     const onNavigateHedler = ()=> {
       navigate(route)

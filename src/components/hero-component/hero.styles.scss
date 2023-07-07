@@ -1,0 +1,16 @@
+.hero-container{
+    margin-top: 3%;
+}
+.video{
+    width :100%;
+}
+@media (max-width: 770px) {
+    .hero-container{
+        margin-top: 13%;
+    }
+    @media (max-width: 480px) {
+        .hero-container{
+            margin-top: 20%;
+        }
+}
+}
